@@ -193,4 +193,322 @@
       .contact-wrapper{grid-template-columns:1fr;gap:8px;padding:14px;border-radius:26px;}
       .contact-item{font-size:.85rem;padding:8px 12px;gap:10px;}
       .contact-item i{font-size:1.1rem;width:32px;height:32px;}
-      .contact-cta
+      .contact-cta{font-size:.8rem;padding:12px 16px;border-radius:28px;margin-top:12px;}
+      footer{margin-top:28px;font-size:.72rem;padding:12px 0 6px;}
+      .balloon{opacity:.5;}
+      .balloon .string{height:40px;}
+      .butterfly{font-size:16px;}
+      .petal{width:13px;height:13px;}
+      .sparkle{display:none;}
+    }
+    @media(max-width:380px){
+      .carousel-container{height:190px;}
+      .slide-caption{font-size:.82rem;padding:7px 14px;}
+      .logo-text h1{font-size:1.15rem;}
+      nav a{font-size:.68rem;}
+      .section-title{font-size:1.2rem;}
+      .gift-card h4{font-size:.74rem;}
+      .gift-card p{font-size:.62rem;}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;}
+      .bg-bubbles,.balloon,.petal,.butterfly,.sparkle{display:none;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-bubbles">
+    <span style="left:5%;width:26px;height:26px;animation-duration:14s;background:rgba(255,182,193,0.3);"></span>
+    <span style="left:20%;width:16px;height:16px;animation-duration:9s;background:rgba(107,166,255,0.25);"></span>
+    <span style="left:45%;width:34px;height:34px;animation-duration:18s;background:rgba(255,105,180,0.15);"></span>
+    <span style="left:65%;width:20px;height:20px;animation-duration:11s;background:rgba(107,166,255,0.3);"></span>
+    <span style="left:88%;width:28px;height:28px;animation-duration:16s;background:rgba(255,182,193,0.3);"></span>
+  </div>
+
+  <div class="balloon b1"><div class="body"></div><div class="knot"></div><div class="string"></div></div>
+  <div class="balloon b2"><div class="body"></div><div class="knot"></div><div class="string"></div></div>
+  <div class="balloon b3"><div class="body"></div><div class="knot"></div><div class="string"></div></div>
+  <div class="balloon b4"><div class="body"></div><div class="knot"></div><div class="string"></div></div>
+  <div class="balloon b5"><div class="body"></div><div class="knot"></div><div class="string"></div></div>
+
+  <div class="petal p1"></div>
+  <div class="petal p2"></div>
+  <div class="petal p3"></div>
+  <div class="petal p4"></div>
+  <div class="petal p5"></div>
+  <div class="petal p6"></div>
+
+  <i class="fas fa-star sparkle s1"></i>
+  <i class="fas fa-star sparkle s2"></i>
+  <i class="fas fa-star sparkle s3"></i>
+  <i class="fas fa-star sparkle s4"></i>
+
+  <div class="butterfly"><i class="fas fa-butterfly" style="color:#ff8fc7;"></i></div>
+  <div class="butterfly"><i class="fas fa-butterfly" style="color:#6ba6ff;"></i></div>
+  <div class="butterfly"><i class="fas fa-butterfly" style="color:#ffb347;"></i></div>
+  <div class="butterfly"><i class="fas fa-butterfly" style="color:#ff69b4;"></i></div>
+
+  <div class="wrapper">
+    <header>
+      <div class="logo-area">
+        <div class="logo-icon">
+          <svg class="footsteps-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#ffffff" stroke="#ff69b4" stroke-width="1.5">
+              <ellipse cx="20" cy="22" rx="7" ry="10" transform="rotate(-15 20 22)" fill="white" stroke="#4d7cff"/>
+              <circle cx="16" cy="16" r="3" fill="white" stroke="#4d7cff"/>
+              <circle cx="22" cy="14" r="2.5" fill="white" stroke="#4d7cff"/>
+              <circle cx="27" cy="15" r="2" fill="white" stroke="#4d7cff"/>
+              <ellipse cx="40" cy="38" rx="7" ry="10" transform="rotate(15 40 38)" fill="white" stroke="#4d7cff"/>
+              <circle cx="36" cy="32" r="3" fill="white" stroke="#4d7cff"/>
+              <circle cx="42" cy="30" r="2.5" fill="white" stroke="#4d7cff"/>
+              <circle cx="47" cy="31" r="2" fill="white" stroke="#4d7cff"/>
+            </g>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1>First Step Decors</h1>
+          <p>baby steps to magic</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="#services"><i class="fas fa-gift"></i> Services</a></li>
+          <li><a href="#gifts"><i class="fas fa-crown"></i> Gifts</a></li>
+          <li><a href="#contact"><i class="fas fa-comment-dots"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="carousel-section">
+      <div class="carousel-container" id="carousel">
+        <div class="carousel-slide active" style="background-image:url('https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+          <div class="slide-caption">Wedding magic</div>
+        </div>
+        <div class="carousel-slide" style="background-image:url('https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+          <div class="slide-caption">Birthday wonderland</div>
+        </div>
+        <div class="carousel-slide" style="background-image:url('https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+          <div class="slide-caption">Baby shower bliss</div>
+        </div>
+        <div class="carousel-slide" style="background-image:url('https://images.pexels.com/photos/169193/pexels-photo-169193.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+          <div class="slide-caption">Engagement elegance</div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+
+    <section id="gallery">
+      <h2 class="section-title"><i class="fas fa-camera-retro"></i> Our Decor Gallery <span class="bloom"></span></h2>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- filled by JS from content/gallery.json -->
+        <p style="grid-column:1/-1;text-align:center;color:#7a5b6b;">Loading gallery…</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title"><i class="fas fa-magic"></i> Decoration Services <span class="bloom blue"></span></h2>
+      <div class="services-grid">
+        <div class="service-item"><i class="fas fa-birthday-cake"></i><h3>Birthday</h3><p>Theme parties, balloon arches</p></div>
+        <div class="service-item"><i class="fas fa-ring"></i><h3>Wedding</h3><p>Mandap, floral aisles, stage</p></div>
+        <div class="service-item"><i class="fas fa-baby"></i><h3>Baby Shower</h3><p>Pastel setups, mom-to-be chair</p></div>
+        <div class="service-item"><i class="fas fa-heart"></i><h3>Engagement</h3><p>Ring platter, backdrop, lights</p></div>
+        <div class="service-item"><i class="fas fa-champagne-glasses"></i><h3>Anniversary</h3><p>Romantic dinner, candle decor</p></div>
+        <div class="service-item"><i class="fas fa-graduation-cap"></i><h3>Graduation</h3><p>Photo booths, cap & gown</p></div>
+        <div class="service-item"><i class="fas fa-briefcase"></i><h3>Corporate</h3><p>Launches, office celebrations</p></div>
+        <div class="service-item"><i class="fas fa-moon"></i><h3>Festive</h3><p>Diwali, Christmas, Eid</p></div>
+        <div class="service-item"><i class="fas fa-tree"></i><h3>Haldi & Mehendi</h3><p>Marigold, mirror, boho themes</p></div>
+        <div class="service-item"><i class="fas fa-dove"></i><h3>Naming Ceremony</h3><p>Cradle decor, pastel florals</p></div>
+      </div>
+    </section>
+
+    <section id="gifts">
+      <h2 class="section-title"><i class="fas fa-gifts"></i> Customized Return Gifts <span class="bloom purple"></span></h2>
+      <div class="gifts-container">
+        <div class="gift-card"><i class="fas fa-mug-hot"></i><h4>Mugs</h4><p>names, dates & photos</p></div>
+        <div class="gift-card"><i class="fas fa-key"></i><h4>Keychains</h4><p>acrylic, wooden, resin</p></div>
+        <div class="gift-card"><i class="fas fa-candy-cane"></i><h4>Sweet Boxes</h4><p>custom tags & wrappers</p></div>
+        <div class="gift-card"><i class="fas fa-candle-holder"></i><h4>Candles</h4><p>monogram & dried flowers</p></div>
+        <div class="gift-card"><i class="fas fa-tshirt"></i><h4>Mini T-shirts</h4><p>shower & birthday specials</p></div>
+        <div class="gift-card"><i class="fas fa-leaf"></i><h4>Succulents</h4><p>decorated themed pots</p></div>
+        <div class="gift-card"><i class="fas fa-pen"></i><h4>Custom Pens</h4><p>engraved names</p></div>
+        <div class="gift-card"><i class="fas fa-mobile-alt"></i><h4>Phone Charms</h4><p>beaded, personalized</p></div>
+        <div class="gift-card"><i class="fas fa-shopping-bag"></i><h4>Tote Bags</h4><p>printed themes & quotes</p></div>
+        <div class="gift-card"><i class="fas fa-gem"></i><h4>Jewelry Pouches</h4><p>silk, embroidered initials</p></div>
+        <div class="gift-card"><i class="fas fa-crown"></i><h4>Mini Crowns</h4><p>birthday & shower</p></div>
+        <div class="gift-card"><i class="fas fa-cookie-bite"></i><h4>Cookie Jars</h4><p>labels & ribbon</p></div>
+        <div class="gift-card"><i class="fas fa-sticky-note"></i><h4>Stationery Sets</h4><p>notebooks, pens, stickers</p></div>
+        <div class="gift-card"><i class="fas fa-clock"></i><h4>Mini Clocks</h4><p>personalized names</p></div>
+      </div>
+
+      <div class="custom-idea-banner">
+        <i class="fas fa-lightbulb"></i>
+        <p>Have something different in mind?<br>Tell us your idea — we bring it to life!</p>
+        <small>From quirky themes to handcrafted favors — we customize everything</small>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title"><i class="fas fa-address-card"></i> Let's create together <span class="bloom"></span></h2>
+      <div class="contact-wrapper">
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/919087963102" target="_blank">9087963102 (WhatsApp)</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+917358521202">7358521202</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+916381130169">6381130169</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-instagram"></i>
+          <a href="https://instagram.com/decorz_1ststep" target="_blank">@decorz_1ststep</a>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <i class="fas fa-heart"></i> To book your decoration, call us or DM us on Instagram.
+        <i class="fas fa-heart"></i>
+      </div>
+    </section>
+
+    <footer>
+      <i class="fas fa-star"></i>
+      <p>2026 First Step Decors — baby steps to beautiful memories</p>
+      <i class="fas fa-star"></i>
+    </footer>
+  </div>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-event" id="lb-event"></div>
+    <button class="lb-close" id="lb-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-img-wrap">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+
+  <script>
+    /* ===== CAROUSEL ===== */
+    (function(){
+      const slides=document.querySelectorAll('.carousel-slide');
+      const dotsContainer=document.getElementById('carousel-dots');
+      let currentIndex=0;const totalSlides=slides.length;let autoInterval;
+      for(let i=0;i<totalSlides;i++){
+        const dot=document.createElement('div');dot.classList.add('dot');if(i===0)dot.classList.add('active');
+        dot.dataset.index=i;dot.addEventListener('click',()=>window.goToSlide(i));dotsContainer.appendChild(dot);
+      }
+      const dots=document.querySelectorAll('.dot');
+      function goToSlide(index){if(index<0)index=totalSlides-1;if(index>=totalSlides)index=0;
+        slides.forEach((s,i)=>s.classList.toggle('active',i===index));
+        dots.forEach((d,i)=>d.classList.toggle('active',i===index));currentIndex=index;}
+      window.goToSlide=function(i){goToSlide(i);resetAuto();};
+      function nextSlide(){goToSlide(currentIndex+1);}
+      function startAuto(){if(autoInterval)clearInterval(autoInterval);autoInterval=setInterval(nextSlide,4000);}
+      function resetAuto(){if(autoInterval)clearInterval(autoInterval);startAuto();}
+      startAuto();
+      const carouselEl=document.querySelector('.carousel-container');
+      carouselEl.addEventListener('mouseenter',()=>{if(autoInterval)clearInterval(autoInterval);});
+      carouselEl.addEventListener('mouseleave',startAuto);
+      let touchStartX=0,touchStartY=0;
+      carouselEl.addEventListener('touchstart',e=>{touchStartX=e.changedTouches[0].screenX;touchStartY=e.changedTouches[0].screenY;},{passive:true});
+      carouselEl.addEventListener('touchend',e=>{
+        const dx=e.changedTouches[0].screenX-touchStartX;const dy=e.changedTouches[0].screenY-touchStartY;
+        if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){if(dx<0){goToSlide(currentIndex+1);resetAuto();}else{goToSlide(currentIndex-1);resetAuto();}}
+      },{passive:true});
+    })();
+
+    /* ===== DYNAMIC GALLERY + LIGHTBOX ===== */
+    (function(){
+      const grid=document.getElementById('gallery-grid');
+      const lightbox=document.getElementById('lightbox');
+      const lbImg=document.getElementById('lb-img');
+      const lbCounter=document.getElementById('lb-counter');
+      const lbEvent=document.getElementById('lb-event');
+      const btnPrev=document.getElementById('lb-prev');
+      const btnNext=document.getElementById('lb-next');
+      const btnClose=document.getElementById('lb-close');
+
+      let photos=[];       // flat list of {src, event, caption}
+      let currentGroup=[]; // photos of the currently open event
+      let currentIndex=0;
+
+      function renderGallery(data){
+        const photos=data.photos||[];
+        photos.length===0 ? grid.innerHTML='<p style="grid-column:1/-1;text-align:center;color:#7a5b6b;">No photos yet — check back soon!</p>' : grid.innerHTML='';
+
+        photos.forEach((p,idx)=>{
+          const card=document.createElement('div');
+          card.className='gallery-card';
+          card.dataset.event=p.event;
+          card.dataset.index=idx;
+          card.innerHTML=`
+            <img src="${p.src}" alt="${p.caption||p.event}" loading="lazy">
+            <div class="event-tag">${p.event}</div>
+            <div class="overlay">${p.caption||p.event}</div>
+          `;
+          card.addEventListener('click',()=>openLightbox(idx));
+          grid.appendChild(card);
+        });
+      }
+
+      function openLightbox(flatIndex){
+        const clicked=photos[flatIndex];
+        currentGroup=photos.filter(p=>p.event===clicked.event);
+        currentIndex=currentGroup.findIndex(p=>p.src===clicked.src);
+        showPhoto();
+        lightbox.classList.add('open');
+        document.body.style.overflow='hidden';
+      }
+
+      function showPhoto(){
+        const p=currentGroup[currentIndex];
+        lbImg.src=p.src;
+        lbImg.alt=p.caption||p.event;
+        lbEvent.textContent=p.event;
+        lbCounter.textContent=`${currentIndex+1} / ${currentGroup.length}`;
+        btnPrev.style.visibility=currentGroup.length>1?'visible':'hidden';
+        btnNext.style.visibility=currentGroup.length>1?'visible':'hidden';
+      }
+
+      function nextPhoto(){currentIndex=(currentIndex+1)%currentGroup.length;showPhoto();}
+      function prevPhoto(){currentIndex=(currentIndex-1+currentGroup.length)%currentGroup.length;showPhoto();}
+      function closeLightbox(){lightbox.classList.remove('open');document.body.style.overflow='';}
+
+      btnNext.addEventListener('click',nextPhoto);
+      btnPrev.addEventListener('click',prevPhoto);
+      btnClose.addEventListener('click',closeLightbox);
+      lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
+      document.addEventListener('keydown',e=>{
+        if(!lightbox.classList.contains('open'))return;
+        if(e.key==='Escape')closeLightbox();
+        if(e.key==='ArrowRight')nextPhoto();
+        if(e.key==='ArrowLeft')prevPhoto();
+      });
+
+      // touch swipe in lightbox
+      let lbTouchX=0,lbTouchY=0;
+      lightbox.addEventListener('touchstart',e=>{lbTouchX=e.changedTouches[0].screenX;lbTouchY=e.changedTouches[0].screenY;},{passive:true});
+      lightbox.addEventListener('touchend',e=>{
+        const dx=e.changedTouches[0].screenX-lbTouchX;const dy=e.changedTouches[0].screenY-lbTouchY;
+        if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>50){if(dx<0)nextPhoto();else prevPhoto();}
+      },{passive:true});
+
+      // load data
+      fetch('content/gallery.json',{cache:'no-store'})
+        .then(r=>r.json())
+        .then(data=>{photos=data.photos||[];renderGallery(data);})
+        .catch(err=>{
+          console.error('Gallery load error:',err);
+          grid.innerHTML='<p style="grid-column:1/-1;text-align:center;color:#7a5b6b;">Gallery is updating. Please refresh in a moment.</p>';
+        });
+    })();
+  </script>
+</body>
+</html>
