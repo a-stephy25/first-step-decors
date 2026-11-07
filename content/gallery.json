@@ -1,0 +1,10 @@
+{
+  "photos": [
+    { "src": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800", "event": "Wedding", "caption": "Wedding stage" },
+    { "src": "https://images.pexels.com/photos/169193/pexels-photo-169193.jpeg?auto=compress&cs=tinysrgb&w=800", "event": "Wedding", "caption": "Ring ceremony" },
+    { "src": "https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=800", "event": "Birthday", "caption": "Birthday balloon arch" },
+    { "src": "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800", "event": "Birthday", "caption": "Floral birthday" },
+    { "src": "https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=800", "event": "Baby Shower", "caption": "Baby shower corner" },
+    { "src": "https://images.pexels.com/photos/1128783/pexels-photo-1128783.jpeg?auto=compress&cs=tinysrgb&w=800", "event": "Anniversary", "caption": "Anniversary sparkle" }
+  ]
+}
