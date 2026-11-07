@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: a-stephy25/first-step-decors
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "gallery"
+    label: "Gallery Photos"
+    label_singular: "Photo"
+    files:
+      - name: "photos"
+        label: "All Gallery Photos"
+        file: "content/gallery.json"
+        description: "Add, edit, or delete photos for the website gallery. Group photos by event name so they swipe together in the lightbox."
+        fields:
+          - name: "photos"
+            label: "Photos"
+            label_singular: "Photo"
+            widget: "list"
+            summary: "{{fields.event}} — {{fields.caption}}"
+            fields:
+              - { name: "src", label: "Photo", widget: "image", required: true }
+              - { name: "event", label: "Event Name", widget: "string", required: true, hint: "e.g. Wedding, Birthday, Baby Shower — photos with the same event name swipe together" }
+              - { name: "caption", label: "Caption", widget: "string", required: false }
